@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        margin:0px;
+        padding: 0px;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .menu_bar
+    {
+        height: 50px;
+        width: 100%;
+        background-color: rgb(22, 22, 71);
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu_bar h1{
+            font-size: 25px;
+            color:white;
+    }
+    .menu ul li
+    {
+        list-style-type:none;
+        display: inline-block;
+        padding: 5px;
+        margin:  5px;   
+    }
+    .menu a{
+        color:white;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .ust img{
+            border-radius: 100%;
+            overflow: hidden;
+            width: 210px;
+            height: 250px;
+            display:block;
+            margin-top:50px;
+        }
+   
+    
+    .orta{
+            width: 100%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            
+            padding-top: 15px;
+            background-color: rgb(22, 22, 71);
+            color:white
+        }
+    .orta table
+        {
+           border-collapse: collapse;
+           width: 100%;
+           
+
+        }
+    .orta th a
+    {
+        color: white;
+        
+    }
+    .alinankurslar
+    {
+        display: flex;
+        flex-flow: row wrap-reverse;
+    }
+    .alinankurslar img
+    {
+        max-width: 200px;
+        height: auto;
+        float:left;
+       
+    }
+    .icerik
+    {
+        width: 900px;
+        margin:auto;
+        
+    }
+    
+  
+    .boyut
+    {
+        font-size: 60%;
+    }
+    
+    
+    .button
+    {
+        border: none;
+        color: white;
+        padding: 10px 60px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: rgb(22, 22, 71);
+        border-radius: 8px;
+    }
+    
+    .center {
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(22, 22, 71) ;
+    }
+    
+    .form-center {
+        margin: auto;
+        width: 30%;
+        padding: 10px;
+    }
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 120px; 
+    }
+    * 
+    {
+        box-sizing: border-box;
+    }
+
+    input[type=text], select {
+        width: 600px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+
+
+</style>
+<body>
+        
+    <div class="menu_bar">
+        <h1>Fulya Eker</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Eğitimler</a></li>
+                <li><a href="#">Kurslar</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="ust">
+        <img src="C:\Users\FLC\Desktop\Eğitim\image\sherlockholmes.jpg" alt="sherlockholmes">
+        <h1 style="text-align: center; font-size: 40px;">Fulya Eker</h1>
+        <p style="text-align: center; font-style: italic; color:rgb(155, 149, 149)" >Frontend Developer</p>
+        <button class="button" style="text-align: center;">Kurslara Git</button>
+    </div>
+    <div class="orta">
+        <div class="row">
+            <div>
+                <h1 style="text-align: center;">Eğitimler</h1>
+            </div>
+            <div class="column">
+                <h1 style="text-align: center;"><a href="https://www.w3schools.com/html/default.asp" style="color: white;" >Sınıf İçi Eğitimler</h1>
+                <p style="text-align: center;">html</p>
+            </div>
+            <div class="column">
+                <h1 style="text-align: center;"><a href="https://www.w3schools.com/css/default.asp" style="color: white;">Online içerikler</h1>
+                <p style="text-align: center;">Css</p>
+            </div>
+            <div class="column">
+                <h1 style="text-align: center;"><a href="https://www.w3schools.com/js/default.asp" style="color: white;" > Konferanslar</a></h1>
+                <p style="text-align: center;">java</p>
+            </div>
+
+            
+        </div>
+        
+    </div>
+    <div class="alt">
+        <h1 style="text-align: center;">Kurslar</h1>
+        <div class="alinankurslar">
+            <div class="icerik">
+                <p><img src="C:\Users\FLC\Desktop\Eğitim\image\java.jpg" alt="java"></p>
+                <p><a href="#">Komple Java Geliştirici Kursu</a></p>
+                <p style="color:rgb(155, 149, 149)">Komple Java Geliştirici Kursu|Sıfırdan Java Öğrenin.</p>
+                <p style="color:rgb(155, 149, 149)" class="boyut">Fulya Eker,Yazılım</p>
+                
+
+            </div>
+        </div>
+        <div class="alinankurslar">
+            <div class="icerik">
+                <img src="C:\Users\FLC\Desktop\Eğitim\image\javascript.jpg" alt="javascript">
+                <p><a href="#">Komple Modern JavaScript Kursu</a></p>
+                <p style="color:rgb(155, 149, 149)">Komple JavaScript Kursu ES6+</p>
+                <p style="color:rgb(155, 149, 149)" class="boyut">Fulya Eker,Yazılım</p>
+                
+                
+
+            </div>
+        </div>
+        <div class="alinankurslar">
+            <div class="icerik">
+                <img src="C:\Users\FLC\Desktop\Eğitim\image\python.jpg" alt="python">
+                <p><a href="#">(40+saat) Python|Sıfırdan İleri Seviye Programlama</a></p>
+                <p style="color:rgb(155, 149, 149)">(40+saat) Python|Sıfırdan İleri Seviye Programlama</p>
+                <p style="color:rgb(155, 149, 149)" class="boyut">Fulya Eker,Yazılım</p>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="center" id="bize-ulasin">
+        <h1 style="color: white; text-align: center">Bana Ulaşın</h1>
+        
+        <form action="/action_page.php" class="form-center">    
+            <p style="color: white; text-align: left">İsim</p>
+            <input type="text" id="name" name="name" placeholder="İsim"><br>
+            <p style="color: white;">Email</p>
+            <input type="text" id="email" name="email" placeholder="Email" ><br><br>
+            <p style="color:white">Mesaj Gönder</p>
+            <input type="text" id="mesaj" name="mesaj" style="height: 100px;" placeholder="Mesajınız..."><br><br>
+            <input type="Submit" value="Gönder" style="width: 600px;">
+        </form>
+    </div>
+    
+</body>
+</html>
